@@ -37,11 +37,7 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- BY ROBERTH -->
-		<dependency>
-			<!-- para quitar error en vscode: "Failed to refresh live data from process" -->
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
+		
 	</dependencies>
 
 	<build>
