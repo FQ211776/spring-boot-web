@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.bolsadeideas.springboot.app</groupId>
 	<artifactId>spring-boot-web</artifactId>
-	<version>CLASE-16 </version>
+	<version>CLASE-17 </version>
 	<name>spring-boot-web</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
