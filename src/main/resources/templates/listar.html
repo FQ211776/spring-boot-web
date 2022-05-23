@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="UTF-8" />
-<title th:text="${titulo}">Insert title here</title>
+	<meta charset="UTF-8" />
+	<title th:text="${titulo}">Insert title here</title>
 </head>
+
 <body>
 	<h1 th:text="${titulo}"></h1>
-<<<<<<< HEAD
-	<div th:if="${usuarios.size()==0}">No hay usuarios en la lista!</div>
-	<table th:if="${usuarios.size()>0}">
-=======
 
 	<div th:if="${usuarios.isEmpty()}">no hay usuarios en la lista!</div>
 
 	<table th:if="${not usuarios.isEmpty()}">
->>>>>>> robert
 		<thead>
 			<tr>
 				<th>Nombre</th>
@@ -31,8 +28,5 @@
 		</tbody>
 	</table>
 </body>
-<<<<<<< HEAD
+
 </html>
-=======
-</html> 
->>>>>>> robert
