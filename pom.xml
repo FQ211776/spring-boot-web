@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.bolsadeideas.springboot.app</groupId>
 	<artifactId>spring-boot-web</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>CLASE-17 </version>
 	<name>spring-boot-web</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -37,11 +37,7 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- BY ROBERTH -->
-		<dependency>
-			<!-- para quitar error en vscode: "Failed to refresh live data from process" -->
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
+		
 	</dependencies>
 
 	<build>

@@ -1,6 +1,10 @@
 package com.bolsadeideas.springboot.web.app.controllers;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
+=======
+import java.util.Arrays;
+>>>>>>> robert
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
@@ -13,16 +17,24 @@ import com.bolsadeideas.springboot.web.app.models.Usuario;
 @Controller
 @RequestMapping("/app")
 public class IndexController {
+<<<<<<< HEAD
 	
 	@GetMapping({"/index", "/", "/home"})
 	public String index (Model model){
 		
 		model.addAttribute("titulo", "hola spring framwork");
 		
+=======
+
+	@GetMapping({ "/index", "/", "", "/home" })
+	public String index(Model model) {
+		model.addAttribute("titulo", "Hola Spring con Model!");
+>>>>>>> robert
 		return "index";
 	}
 
 	@RequestMapping("/perfil")
+<<<<<<< HEAD
 	
 	public String perfil(Model model) {
 		
@@ -56,3 +68,34 @@ public class IndexController {
 }
 }
 
+=======
+	public String perfil(Model model) {
+
+		Usuario usuario = new Usuario();
+
+		usuario.setNombre("Andres");
+		usuario.setApellido("Guzman");
+		usuario.setEmail("andres@correo.com");
+
+		model.addAttribute("usuario", usuario);
+		model.addAttribute("titulo", "Perfil del usuario: ".concat(usuario.getNombre()));
+
+		return "perfil";
+	}
+
+	@RequestMapping("/listar")
+	public String listar(Model model) {
+		Usuario usuario = new Usuario();
+		List<Usuario> usuarios = Arrays.asList(new Usuario("Andres", "Guzman", "andres@correo.com"),
+				new Usuario("Jhon", "Doe", "jhon@correo.com"),
+				new Usuario("Jane", "Doe", "jane@correo.com"),
+				new Usuario("Tornado", "Roe", "roe@correo.com"));
+		
+
+		model.addAttribute("titulo", "listado de usuarios");
+		model.addAttribute("usuarios", usuarios);
+
+		return "listar";
+	}
+}
+>>>>>>> robert
