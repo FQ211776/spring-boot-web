@@ -43,6 +43,11 @@ public class IndexController {
 	public String listar(Model model) {
 	
 	List<Usuario> usuarios = new ArrayList<>();
+	
+	usuarios.add(new Usuario( "David", "Driotis", "david.driotis@gmail.com"));
+	usuarios.add(new Usuario( "Johny", "Cruz", "Johny.Cruz@gmail.com"));
+	usuarios.add(new Usuario( "Miguel", "Zelada", "Miguel.Zelada@gmail.com"));
+	usuarios.add(new Usuario( "Minor", "Martinez", "Minor.Martinez@gmail.com"));
 
 	model.addAttribute("titulo", "Listado de usuarios");
 	model.addAttribute("usuarios", usuarios);
