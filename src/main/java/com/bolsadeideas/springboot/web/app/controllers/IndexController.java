@@ -1,6 +1,7 @@
 package com.bolsadeideas.springboot.web.app.controllers;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
@@ -21,7 +22,6 @@ public class IndexController {
 	}
 
 	@RequestMapping("/perfil")
-
 	public String perfil(Model model) {
 
 		Usuario usuario = new Usuario();
@@ -43,12 +43,11 @@ public class IndexController {
 				new Usuario("Jhon", "Doe", "jhon@correo.com"),
 				new Usuario("Jane", "Doe", "jane@correo.com"),
 				new Usuario("Tornado", "Roe", "roe@correo.com"));
+		
 
-
-	model.addAttribute("titulo", "Listado de usuarios");
-	model.addAttribute("usuarios", usuarios);
+		model.addAttribute("titulo", "listado de usuarios");
+		model.addAttribute("usuarios", usuarios);
 
 		return "listar";
 	}
 }
-
