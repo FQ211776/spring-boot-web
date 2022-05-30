@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @RequestMapping ("/params")
 public class EjemploParamsController {
+	
 	@GetMapping("/")
 	public String index() {
 		
@@ -19,8 +20,6 @@ public class EjemploParamsController {
 	@GetMapping("/string")
 	public String param(@RequestParam(name="texto", required = false, defaultValue = "algun valor...") String texto, Model model) {
 		model.addAttribute("resultado", "el texto enviado es: "+ texto);
-		
-		
 		return "params/ver";
 		
 	
