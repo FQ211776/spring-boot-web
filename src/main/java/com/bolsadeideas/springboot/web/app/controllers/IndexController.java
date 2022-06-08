@@ -16,8 +16,7 @@ import com.bolsadeideas.springboot.web.app.models.Usuario;
 @Controller
 @RequestMapping("/app")
 public class IndexController {
-	
-	
+
 	@Value("${texto.indexcontroller.index.titulo}")
 	private String textoIndex;
 	
@@ -49,8 +48,7 @@ public class IndexController {
 	}
 
 	@RequestMapping("/listar")
-	public String listar(Model model) {		
-
+	public String listar(Model model) {
 		model.addAttribute("titulo", textoListar);
 
 		return "listar";
@@ -66,4 +64,5 @@ public class IndexController {
 		
 		return usuarios;
 	}
+	
 }
