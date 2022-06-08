@@ -31,3 +31,4 @@ public class EjemploVariablesRutaController {
 		return "variables/ver";
 	}
 }
+

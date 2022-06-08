@@ -25,8 +25,7 @@ public class IndexController {
 	
 	@Value("${texto.indexcontroller.listar.titulo}")
 	private String textoListar;
-	
-	
+
 	@GetMapping({ "/index", "/", "", "/home" })
 	public String index(Model model) {
 		model.addAttribute("titulo", textoIndex);
@@ -56,7 +55,9 @@ public class IndexController {
 	}
 	
 	@ModelAttribute("usuarios")
-	public List <Usuario> poblarUsuarios(){
+
+	public List<Usuario> poblarUsuarios(){
+		
 		List<Usuario> usuarios = Arrays.asList(new Usuario("Andres", "Guzman", "andres@correo.com"),
 				new Usuario("Jhon", "Doe", "jhon@correo.com"),
 				new Usuario("Jane", "Doe", "jane@correo.com"),
@@ -64,5 +65,5 @@ public class IndexController {
 		
 		return usuarios;
 	}
-	
 }
+
