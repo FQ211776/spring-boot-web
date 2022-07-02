@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/variables")
 public class EjemploVariablesRutaController {
-
+	
 	@GetMapping("/")
 	public String index(Model model) {
 		model.addAttribute("titulo", "Enviar parámetros de la ruta (@PathVariable)");
@@ -30,5 +30,5 @@ public class EjemploVariablesRutaController {
 				+ " y el número enviado en el path es: " + numero);
 		return "variables/ver";
 	}
+	
 }
-
